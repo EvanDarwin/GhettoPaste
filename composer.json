@@ -1,0 +1,12 @@
+{
+    "name": "evandarwin/ghettopaste",
+    "description": "A ghetto pastebin",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evan Darwin",
+            "email": "evan@devil.io"
+        }
+    ]
+}
