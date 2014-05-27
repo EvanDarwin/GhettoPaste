@@ -45,7 +45,11 @@ function generateRandomString($length = 7)
 function generateUniqueString($depth = 0, $maxDepth = 15)
 {
     $identifier = generateRandomString();
+
     if (pasteFileExists($identifier)) {
+        if($depth >= $maxDepth) {
+            throw new Exception("fuq ur randomness");
+        }
         return generateUniqueString($depth + 1, $maxDepth);
     } else {
         return $identifier;
